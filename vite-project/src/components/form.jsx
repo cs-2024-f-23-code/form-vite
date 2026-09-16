@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import '../App.css';
 
 function Form() {
   const {
@@ -31,7 +30,7 @@ function Form() {
           text: result.errors.map((e) => e.message).join(' ')
         });
       }
-    } catch (err) {
+    } catch {
       setServerMsg({ type: 'error', text: 'Failed to connect to server.' });
     }
   };

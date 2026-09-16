@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import '../App.css';
 
 function Login() {
   const [serverMessage, setServerMessage] = useState(null);
